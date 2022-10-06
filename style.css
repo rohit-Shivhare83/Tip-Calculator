@@ -1,0 +1,253 @@
+:root {
+  --primary: #26c2ad;
+  --dark-primary: #00474b;
+  --primary-text: #556f6e;
+  --background: #c5e4e7;
+  --secondary: #f3f8fb;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background) !important;
+}
+
+/* ===================== Header =========================== */
+header {
+  width: 100%;
+  padding: 5rem;
+  text-align: center;
+  background-color: var(--background);
+}
+@media screen and (max-width: 980px) {
+  header {
+    width: 100%;
+    padding: 1rem !important;
+  }
+  html {
+    font-size: 60.5%;
+  }
+}
+.tip-txt {
+  color: var(--dark-primary);
+}
+.calculator-txt {
+  background-color: var(--dark-primary);
+  color: var(--background) !important;
+}
+
+.calculator-card {
+  background-color: whitesmoke;
+}
+
+/* =============== Container =============== */
+/* --primary: #26c2ad;
+    --dark-primary: #00474b;
+    --primary-text: #556f6e;
+    --background: #c5e4e7;
+    --secondary: #f3f8fb */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: max-content;
+  width: 60% !important;
+  flex-wrap: wrap;
+  padding: 2rem 2rem;
+  border-radius: 2rem;
+  column-gap: 2rem;
+}
+@media screen and (max-width: 980px) {
+  .container {
+    display: flex;
+    padding: 0.8rem 1rem;
+    flex-direction: column;
+  }
+}
+label {
+  width: 100%;
+  height: 100%;
+}
+input {
+  color: #00474b !important;
+  height: 3.8rem;
+  width: 100%;
+  border: 1px solid #26c2ad !important;
+  border-radius: 1rem;
+  padding: 0 10px;
+  margin: auto !important;
+}
+.input-per-btn {
+  background-color: #f3f8fb !important;
+  /* color: #00474b; */
+}
+input[type="number"] {
+  font-size: 1.8rem !important;
+  font-weight: 500 !important;
+}
+/* .input-per-btn {
+  color: #00474b;
+} */
+/* .input-per-btn::placeholder {
+  color: #00474b;
+  font-size: 1.8rem;
+  font-weight: 500;
+} */
+::placeholder {
+  height: 100%;
+  display: flex;
+  text-align: left;
+  margin: auto;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 1.5rem;
+  padding: 0;
+  color: #023c3f61;
+}
+
+/* data-wrapper */
+
+h1 {
+  color: var(--primary-text);
+  margin: 1rem 0 !important;
+}
+h2 {
+  margin: 1rem 0 !important;
+  color: var(--primary-text);
+}
+span {
+  font-size: 3rem;
+}
+h3 {
+  color: #26c2ad;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+p {
+  font-size: 1.4rem;
+}
+.per-btn-container {
+  width: max-content;
+}
+@media screen and (max-width: 640px) {
+  .per-btn-container {
+    width: 80%;
+  }
+  .per-btn {
+    width: 50% !important;
+  }
+}
+
+ul {
+  /* text-align: left; */
+  /* height: 100%; */
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between !important;
+  column-gap: 12px !important;
+  row-gap: 12px !important;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+@media screen and (max-width: 980px) {
+  ul {
+    column-gap: 3.5rem !important;
+    align-items: stretch;
+  }
+  h1 {
+    margin: 0.2rem 0 !important;
+  }
+}
+
+#per-5 {
+  width: 45%;
+  height: 3.8rem;
+}
+.per-btn {
+  width: 50%;
+  font-weight: bold;
+  color: #f3f8fb;
+  background-color: #00474b;
+  height: 100%;
+  border-radius: 1rem;
+  font-size: large;
+}
+.per-btn-container {
+  margin: 1rem 0 !important;
+  padding: 1rem 0;
+  width: fit-content;
+}
+@media screen and (max-width: 980px) {
+  .per-btn-container {
+    margin: auto !important;
+    padding: 1rem 0;
+    width: fit-content;
+  }
+}
+
+/* =============== data-wrapper ============ */
+.data-wrapper {
+  padding: 2rem;
+  height: 100%;
+  width: 40%;
+}
+@media screen and (max-width: 980px) {
+  .data-wrapper {
+    padding: 0.6rem 1rem 1rem 1rem;
+    height: 100%;
+    width: 100%;
+  }
+  .result-wrapper {
+    text-align: center;
+    padding: 2rem !important;
+    width: 95% !important;
+    height: 25rem;
+    margin: auto;
+  }
+}
+.result-wrapper {
+  padding: 2rem;
+  width: 40%;
+  background-color: var(--dark-primary);
+  border-radius: 5%;
+  color: #556f6e;
+}
+.txt {
+  color: #f3f8fb;
+  margin-bottom: 0 !important;
+  margin-top: 1rem !important;
+}
+
+.reset-button {
+  width: 100%;
+  height: 3.8rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+}
+.result-txt {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* padding: 1rem; */
+}
+button {
+  background-color: #26c2ad;
+  color: #022e30;
+  border: none;
+  font-weight: 500;
+}
+.text-amount {
+  width: 100%;
+  display: flex;
+  justify-content: space-between !important;
+}
+.total-amount {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
